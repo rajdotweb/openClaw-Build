@@ -1,15 +1,23 @@
 {
-  "name": "openclaw_ai",
-  "module": "index.ts",
-  "type": "module",
-  "private": true,
-  "devDependencies": {
-    "@types/bun": "latest"
-  },
-  "peerDependencies": {
-    "typescript": "^7"
-  },
-  "dependencies": {
-    "@types/node": "^26.6.3"
-  }
+    "name": "openclawavi",
+    "module": "index.ts",
+    "type": "module",
+    "private": true,
+    "bin": {
+        "openclawavi": "./index.ts"
+    },
+
+    "devDependencies": {
+        "@types/bun": "latest"
+    },
+    "peerDependencies": {
+        "typescript": "^7"
+    },
+    "dependencies": {
+        "@clack/core": "^1.5.1",
+        "@clack/prompts": "^1.8.1",
+        "@types/node": "^26.6.3",
+        "commander": "^15.0.0",
+        "figlet": "^1.12.0"
+    }
 }
