@@ -1,5 +1,5 @@
 #!/usr/bin/env bun
-
+import { runWakeup } from "./tui/wakeup";
 import {Command} from "commander";
 const program = new Command();
 
@@ -12,6 +12,6 @@ program
 .command("wakeup")
 .description("show the command and pick cli or telegram mode")
 .action(async () => {
-    console.log("Wakeup calling...");
+    await runWakeup()
 });
 await program.parseAsync(process.argv);
