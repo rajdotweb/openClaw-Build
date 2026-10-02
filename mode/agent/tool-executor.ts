@@ -28,6 +28,10 @@ function isProbablyTextFile(filePath: string): boolean {
 }  
 
 export class ToolExecutor{
+    clearStaging() {
+        this.overlay.clear();
+        this.deleted.clear();
+    }
     private overlay = new Map<string, string>();
     private deleted = new Set<string>();
     private readonly norm = (rel: string) =>
