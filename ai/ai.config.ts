@@ -1,1 +1,1 @@
-import { createOpenrouter} from "@openrouter/ai-sdk-provider";
+import { createOpenRouter} from "@openrouter/ai-sdk-provider";
